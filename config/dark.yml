@@ -76,18 +76,19 @@ config:
       # Tools related to development.
       development:
         - curl
-        - make
         - build-essential
-        - cmake
         - clang
+        - clang-format
+        - clang-tools-8
+        - bear
         - g++
         - gcc
-        - clang-tools-8
       # Everything Else
       # Which is conditional
       other:
         - i3
         - i3status
+        - stow
       # Packages supplied by external repositories & PPAs
       # Dont Mix packages provided by distribution and PPAs
       # Sometimes external repos and ppas fail, so better isolate it.
